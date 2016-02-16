@@ -2,11 +2,11 @@
 <project default="run" name="First Ant prog">
 	<target name="run" depends="compile">
 		<java classname="com.asif.ant.MyClass">
-			<classpath path="staging" />
+			<!-- <classpath path="staging" /> -->
 		</java>
 	</target>
 	
 	<target name="compile">
-		<javac includeantruntime="false" srcdir="./src" destdir="staging" />
+		<javac includeantruntime="false" srcdir="./src" destdir="./src" />
 	</target>
 </project>
